@@ -2,8 +2,8 @@
     position:sticky;
     right: 0;
     bottom: 0;
-    min-width: 99%;
-    min-height: 99%;
+    min-width: 100%;
+    min-height: 100%;
   }
   
   .videotext {
@@ -13,11 +13,12 @@
     color: gainsboro;
     width: 100%;
     padding: 20px;
+    max-width: 97%;
   }
 
   .videotext h1
   {
-      font-size: 24px;
+      font-size: 28px;
   }
 
   .videotext p
@@ -29,55 +30,92 @@
   body
   {
       background-color: gainsboro;
+      font-family: 'Shippori Antique', 'Libre Franklin', sans-serif
+  }
+
+  h1
+  {
+    font-size: 28px;
+    font-family: 'Fira Sans', sans-serif;
   }
 
   main
   {
-      font-size: 12px;
+      font-size: 18px;
       background-color: gainsboro;
   }
 
-  .content {
+  .content 
+  {
     padding: 16px;
+    color: maroon;
+  }
+
+  .intro
+  {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    border: 2px solid black;
+    color: gainsboro;
+    background-color: maroon;
+  }
+
+  .intro2
+  {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    border: 2px solid black;
+    color: black;
+    background-color: skyblue;
+  }
+
+  .intro h1
+  {
+    display: block;
+    margin: 0.5px;
+  }
+
+  .intro p
+  {
+    flex: 4;
+    padding: 26px;
+  }
+
+  .intro img
+  {
+    flex: 1;
+    padding: 3px;
+    width: 2px;
+  }
+
+  .intro2 h1
+  {
+    display: block;
+    margin: 0.5px;
+  }
+
+  .intro2 p
+  {
+    flex: 4;
+    padding: 26px;
+  }
+
+  .intro2 img
+  {
+    flex: 1;
+    padding: 3px;
+    width: 2px;
   }
 
    /* Navbar */
   #navbar 
   {
     overflow: hidden;
-    background-color: gainsboro;
+    background-color: rgb(199, 199, 199);
     z-index: +1;
-  }
-  
-  #navbar a 
-  {
-    float: right;
-    display: flex;
-    color: black;
-    text-align: center;
-    padding: 34px;
-    text-decoration: none;
-    font-size: 30px;
-  }
-
-  #navbar p 
-  {
-    float: left;
-    display: flex;
-    color: black;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 30px;
-  }
-
-  #navbar img 
-  {
-    float: left;
-    display: flex;
-    padding: 14px;
-    width: 80px;
-    height: 80px;
+    font-family: 'Fira Sans', sans-serif;
   }
   
   .sticky 
@@ -92,5 +130,65 @@
     padding-top: 60px;
   }
 
+  nav ul 
+  {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+  }
+  
+  nav ul li 
+  {
+    flex:1;
+    list-style-type: none;
+  }
+
+  nav ul li.logo
+  {
+    flex:3;
+    list-style-type: none;
+  }
+
+  nav ul li a.thispage 
+  { 
+    background-color: skyblue;
+    color: black;  
+    border: 3px solid white;
+    display: block;
+    padding: 0.5em;
+    margin: 1em;  
+    text-align: center;
+    text-decoration: none;  
+    border-radius: 3px;
+  }
+  
+  nav ul li a.other
+  { 
+    background-color: maroon;
+    color: gainsboro;  
+    border: 3px solid skyblue;
+    display: block;
+    padding: 0.5em;
+    margin: 1em;  
+    text-align: center;
+    text-decoration: none;  
+    border-radius: 3px;
+  }
+  
+  nav ul li a:hover 
+  {
+    background-color: gainsboro;
+    box-shadow: inset 3px 3px 15px rgb(65, 65, 65); 
+    color: maroon; 
+    border: 3px solid black;
+  }
+
+  nav ul li img 
+  {
+    padding-left: 20px;
+    width: 70px;
+    height: 70px;
+  }
+  
 
   
