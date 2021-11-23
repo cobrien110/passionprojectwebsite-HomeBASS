@@ -7,20 +7,55 @@
     <title>HomeBASS: Your Home for All Things Bass Guitar</title>
     <meta name="author" content="Cory O'Brien">
     <meta name="description" content="Home page for HomeBass">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<nav>
-</nav>
+    <section id="navbar">
+        <img src="bass temp icon.png" alt="HomeBASS Logo">
+        <p>HomeBASS</P>
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </section>
 
-<video autoplay muted loop id="myVideo">
-    <source src="redblue.mp4" type="video/mp4">
-  </video>
-  
-  <div class="videotext">
-    <h1>Test Video</h1>
-    <p>Lorem ipsum...</p>
-  </div>
+<main>
+    <section class = "video">
+        <video autoplay muted loop id="myVideo">
+            <source src="redblue.mp4" type="video/mp4">
+        </video>
+        <section class="videotext">
+            <h1>Welcome to HomeBASS!</h1>
+            <p>Your Home for All Things Bass Guitar</p>
+        </section>
+    </section>
 
+    <section class = "content">
+        <h1>What can we help you find today?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+</main>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickynav()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickynav() 
+{
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
