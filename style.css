@@ -87,7 +87,8 @@
   {
     flex: 1;
     padding: 3px;
-    width: 2px;
+    width: 1em;
+    height: auto;
   }
 
   .intro2 h1
@@ -106,7 +107,8 @@
   {
     flex: 1;
     padding: 3px;
-    width: 2px;
+    width: 1em;
+    height: auto;
   }
 
    /* Navbar */
@@ -116,6 +118,7 @@
     background-color: rgb(199, 199, 199);
     z-index: +1;
     font-family: 'Fira Sans', sans-serif;
+    position:sticky;
   }
   
   .sticky 
@@ -190,5 +193,21 @@
     height: 70px;
   }
   
+  @media screen and (max-width: 1000px)
+  {
+    #navbar
+    {
+      position: static;
+    }
+    
+    nav ul
+    {
+      flex-direction: column;
+      padding: 0px;
+    }
 
-  
+    .sticky
+    {
+      position: static;
+    }
+  }
