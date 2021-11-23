@@ -53,42 +53,45 @@
 
   .intro
   {
-    display: flex;
-    flex-direction: row;
     padding: 16px;
     border: 2px solid black;
     color: gainsboro;
     background-color: maroon;
   }
 
-  .intro2
+  .intro h1
+  {
+    margin: 0.5px;
+    display: block;
+  }
+
+  .introcontent
   {
     display: flex;
     flex-direction: row;
     padding: 16px;
-    border: 2px solid black;
-    color: black;
-    background-color: skyblue;
   }
 
-  .intro h1
-  {
-    display: block;
-    margin: 0.5px;
-  }
-
-  .intro p
+  .introcontent p
   {
     flex: 4;
     padding: 26px;
   }
 
-  .intro img
+  .introcontent img
   {
     flex: 1;
     padding: 3px;
-    width: 1em;
-    height: auto;
+    width: 60%;
+    height: 60%;
+  }
+
+  .intro2
+  {
+    padding: 16px;
+    border: 2px solid black;
+    color: black;
+    background-color: skyblue;
   }
 
   .intro2 h1
@@ -107,8 +110,8 @@
   {
     flex: 1;
     padding: 3px;
-    width: 1em;
-    height: auto;
+    width: 60%;
+    height: 60%;
   }
 
    /* Navbar */
@@ -125,7 +128,7 @@
   {
     position: fixed;
     top: 0;
-    width: 99%;
+    width: 100%;
   }
   
   .sticky + .content 
@@ -193,7 +196,7 @@
     height: 70px;
   }
   
-  @media screen and (max-width: 1000px)
+  @media screen and (max-width: 800px)
   {
     #navbar
     {
@@ -204,6 +207,20 @@
     {
       flex-direction: column;
       padding: 0px;
+    }
+
+    nav ul li
+    {
+      margin-top: -0.8em;
+      margin-bottom: -0.8em;
+    }
+
+    nav ul li img 
+    {
+      padding-left: 10px;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1em;
     }
 
     .sticky
